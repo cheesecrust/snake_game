@@ -59,3 +59,44 @@ bool Snake::getGate() const
 {
     return gate;
 }
+
+void Snake::setMaxsize(const int s)
+{
+    if (maxsize < s)
+        maxsize = s;
+}
+
+int Snake::getMaxsize() const
+{
+    return maxsize;
+}
+
+void Snake::setGrowth()
+{
+    growth++;
+}
+
+int Snake::getGrowth() const
+{
+    return growth;
+}
+
+void Snake::setGatecnt()
+{
+    gatecnt++;
+}
+
+int Snake::getGatecnt() const
+{
+    return gatecnt;
+}
+
+void Snake::setPoison()
+{
+    poison++;
+}
+
+int Snake::getPoison() const
+{
+    return poison;
+}

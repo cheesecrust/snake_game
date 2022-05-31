@@ -11,8 +11,13 @@ class Snake
 
     bool gate;
 
+    int maxsize;
+    int growth;
+    int poison;
+    int gatecnt;
+
   public:
-    Snake(int s = 3, int y = 10, int x = 8)
+    Snake(int s = 3, int y = 10, int x = 16) : maxsize(3), growth(0), poison(0), gatecnt(0)
     {
         size = s;
         heady = y;
@@ -37,4 +42,13 @@ class Snake
 
     void setGate();
     bool getGate() const;
+
+    void setMaxsize(int s);
+    int getMaxsize() const;
+    void setGrowth();
+    int getGrowth() const;
+    void setGatecnt();
+    int getGatecnt() const;
+    void setPoison();
+    int getPoison() const;
 };
