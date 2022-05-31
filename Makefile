@@ -1,2 +1,2 @@
 snake: snake.cpp
-	g++ -o snake snake.cpp -lm -lncurses -Wall
+	g++ -o snake main.cpp map.cpp snake.cpp -lm -lncursesw -Wall
